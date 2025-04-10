@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hash Generator</title>
+    <title>Gerador de Hash SHA-256</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>SHA-256 Hash Generator</h2>
-    <form id="hashForm">
-        <label for="inputString">Insert a string here:</label>
-        <input type="text" id="inputString" required>
-        <button type="submit">Gerar Hash</button>
-    </form>
-    <p id="hashResult"></p>
+    <div class="container">
+        <div class="logo-inco">INCO</div>
+        <h2>Gerador de Hash SHA-256</h2>
+        <form id="hashForm">
+            <label for="inputString">Insert data to be hashed :</label>
+            <input type="text" id="inputString" required>
+            <button type="submit">Gerar Hash</button>
+        </form>
+        <p id="hashResult"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
